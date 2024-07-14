@@ -1,6 +1,6 @@
-#empty series
 import pandas as pd
-import numpy as np
+
+# import numpy as np
 # ser=pd.Series()
 # print(ser)
 # data=np.array(['D','I','P','I','K','A'])
@@ -19,50 +19,47 @@ import numpy as np
 
 # program to depict shallow copy
 # in pandas dataframe
- 
+
 # import module
 # program to depict shallow copy
 # in pandas dataframe
- 
+
 # import module
 # import pandas as pd
- 
+
 # # assign dataframe
 # df = pd.DataFrame({'index': [1, 2, 3, 4],
 #                    'GFG': ['Mandy', 'Ron', 'Jacob', 'Bayek']})
- 
- 
+
+
 # # shallow copy
 # copydf = df.copy(deep=False)
- 
+
 # # comparing shallow copied dataframe
 # # and original dataframe
 # print('\nBefore Operation:\n', copydf == df)
- 
+
 # # assignment operation
 # copydf['index'] = [0, 0, 0, 0]
- 
- 
+
+
 # # comparing shallow copied dataframe
 # # and original dataframe
 # print('\nAfter Operation:\n', copydf == df)
- 
+
 # print('\nOriginal Dataframe after operation:\n', df)
 
-# import pandas package as pd
-import pandas as pd
 
 # Define a dictionary containing students data
-data = {'Name': ['Sneha', 'Shreya',
-				'Sabhya', 'Riya'],
-		'Age': [22, 18, 10, 19],
-		'Stream': ['Computer', 'Commerce',
-				'Arts', 'Mechanical'],
-		'Percentage': [89, 93, 97, 73]}
+data = {
+    "Name": ["Sneha", "Shreya", "Sabhya", "Riya"],
+    "Age": [22, 18, 10, 19],
+    "Stream": ["Computer", "Commerce", "Arts", "Mechanical"],
+    "Percentage": [89, 93, 97, 73],
+}
 
 # Convert the dictionary into DataFrame
-df = pd.DataFrame(data, columns=['Name', 'Age',
-								'Stream', 'Percentage'])
+df = pd.DataFrame(data, columns=["Name", "Age", "Stream", "Percentage"])
 
 # print("Given Dataframe :\n", df)
 
@@ -76,5 +73,5 @@ df = pd.DataFrame(data, columns=['Name', 'Age',
 
 # for index,row in df.iterrows():
 #     print(row['Name'])
-df=df.sort_values(by="Age", ascending=False)
+df = df.sort_values(by="Age", ascending=False)
 print(df)

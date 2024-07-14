@@ -1,25 +1,28 @@
 # import pandas as pd
-#paragraph , n=2
-sentence="a,b,c,d are going to school"
-result="a,b c,d are going to school"
-n=2
-def remove_comma(n,sentence):
-    count=0
-    temp_list=[]
+# paragraph , n=2
+sentence = "a,b,c,d are going to school"
+result = "a,b c,d are going to school"
+n = 2
+
+
+def remove_comma(n, sentence):
+    count = 0
+    temp_list = []
     for i in sentence:
-        if(i==',' and count !=n):
-            count=count+1 
-            print(count)   
+        if i == "," and count != n:
+            count = count + 1
+            print(count)
         else:
             temp_list.append(i)
-        if(count==n):
-           temp_list.append('')  
+        if count == n:
+            temp_list.append("")
     print(sentence)
-    
-    temp_list="".join(temp_list)
+
+    temp_list = "".join(temp_list)
     print(temp_list)
-    
-remove_comma(n,sentence)
+
+
+remove_comma(n, sentence)
 
 # >>> s="a,b,c,d are going to school"
 # >>> s1=s.split(',')
